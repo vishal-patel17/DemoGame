@@ -1,6 +1,5 @@
-# team_app
-
-An App for team management
+# Game App
+Mobile Game app using Flutter
 
 ## Getting Started
 
