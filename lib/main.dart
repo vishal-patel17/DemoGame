@@ -19,7 +19,6 @@ class _MyAppState extends State<MyApp> {
 
   ui.Image _image;
 
-
   ImageMap images = new ImageMap(rootBundle);
   Future<Null> _loadAssets() async {
     _image = await images.loadImage('assets/car.png');
@@ -43,10 +42,9 @@ class _MyAppState extends State<MyApp> {
 //    });
   }
 
-  changeCarPosition(){
+  changeCarPosition() {
     _car.position = const Offset(350.0, 500.0);
   }
-
 
   @override
   Widget build(BuildContext context) {
@@ -75,11 +73,7 @@ class EventHandlingNode extends NodeWithSize {
     if (event.type == PointerDownEvent) {
       print('PointerDownEvent');
       _car.position = const Offset(350.0, 500.0);
-    }
-
-
-    else if (event.type == PointerMoveEvent)
-      print('PointerMoveEvent');
+    } else if (event.type == PointerMoveEvent) print('PointerMoveEvent');
 
     return true;
   }
