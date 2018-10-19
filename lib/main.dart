@@ -42,24 +42,23 @@ class _MyAppState extends State<MyApp> {
 //    });
   }
 
-  changeCarPosition() {
-    _car.position = const Offset(350.0, 500.0);
-  }
+//  changeCarPosition() {
+//    _car.position = const Offset(350.0, 500.0);
+//  }
 
   @override
   Widget build(BuildContext context) {
-    return new SpriteWidget(eventHandingNode);
-//    return MaterialApp(
-//      debugShowCheckedModeBanner: false,
-//      home: Scaffold(
+    //return new SpriteWidget(eventHandingNode);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        backgroundColor: Colors.lightBlue,
 //        appBar: AppBar(
 //          title: Text('Game'),
 //        ),
-//        body: Center(
-//          child: Text('Welcome'),
-//        ),
-//      ),
-//    );
+        body: new SpriteWidget(eventHandingNode),
+      )
+    );
   }
 }
 
